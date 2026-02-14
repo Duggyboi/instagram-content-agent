@@ -1,0 +1,104 @@
+tasks:
+  project_setup:
+    description: "Initialize and configure the agentic framework project"
+    subtasks:
+      - Initialize project environment
+      - Set up dependencies
+      - Configure logging
+      - Create initial agents
+
+  agent_development:
+    description: "Develop and test new agents"
+    subtasks:
+      - Define agent role and responsibilities
+      - Implement agent class
+      - Add skills to agent
+      - Test agent functionality
+      - Document agent behavior
+
+  skill_creation:
+    description: "Create and register new skills"
+    subtasks:
+      - Define skill interface
+      - Implement skill module
+      - Write unit tests
+      - Register in skills.json
+      - Document usage
+
+  documentation:
+    description: "Maintain and update project documentation"
+    subtasks:
+      - Update README as project evolves
+      - Document new features
+      - Keep API docs current
+      - Maintain examples
+
+  code_quality:
+    description: "Maintain code quality standards"
+    subtasks:
+      - Run linting (Flake8)
+      - Run formatting (Black)
+      - Execute test suite
+      - Review code coverage
+      - Fix issues found
+
+  investigation:
+    description: "Evaluate new tools and integrations"
+    subtasks:
+      - Research tool capabilities
+      - Create proof of concept
+      - Test performance
+      - Document findings
+      - Make recommendation
+
+  issue_resolution:
+    description: "Address bugs and issues"
+    subtasks:
+      - Reproduce issue
+      - Debug root cause
+      - Implement fix
+      - Add regression test
+      - Deploy fix
+
+# Workflow definitions
+workflows:
+  daily_standup:
+    name: "Daily Standup"
+    frequency: "daily"
+    steps:
+      - Review overnight changes
+      - Check PM_FEEDBACK.md for new requests
+      - Log daily progress
+      - Update CONTEXT.md status
+      - Report blockers
+
+  feature_delivery:
+    name: "Feature Development & Delivery"
+    steps:
+      - Analyze requirements from PM_FEEDBACK.md
+      - Decompose into implementation tasks
+      - Create feature branch
+      - Develop with tests
+      - Code review (if applicable)
+      - Merge to main
+      - Deploy/Release
+      - Document feature
+
+  emergency_response:
+    name: "Critical Issue Response"
+    steps:
+      - Log issue immediately in CONTEXT.md
+      - Assess impact and severity
+      - Isolate problem (rollback if needed)
+      - Implement fix or workaround
+      - Validate recovery
+      - Root cause analysis
+      - Escalate to PM_FEEDBACK.md if needed
+
+# Execution guidelines
+execution_guidelines:
+  log_level: "INFO"  # DEBUG for verbose logging
+  test_required: true
+  style_check_required: true
+  commit_on_completion: true
+  escalate_on_error: true

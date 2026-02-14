@@ -1,0 +1,198 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-02-10",
+  "skills": [
+    {
+      "id": "repo_management",
+      "name": "Repository Management",
+      "description": "Clone, pull, push, branch, and manage files/folders in the project repository.",
+      "category": "developer_tools",
+      "status": "active",
+      "capabilities": [
+        "git_clone",
+        "git_pull",
+        "git_push",
+        "git_branch",
+        "git_merge",
+        "file_operations",
+        "folder_operations"
+      ],
+      "dependencies": ["git"],
+      "examples": [
+        "Clone the repository",
+        "Create and switch to feature branch",
+        "Commit changes with message",
+        "Push to remote repository"
+      ]
+    },
+    {
+      "id": "code_generation",
+      "name": "Code Generation & Refactoring",
+      "description": "Generate, modify, and refactor code in supported languages (Python, JavaScript, etc.).",
+      "category": "development",
+      "status": "active",
+      "capabilities": [
+        "write_code",
+        "refactor_code",
+        "generate_tests",
+        "create_documentation"
+      ],
+      "dependencies": [],
+      "languages_supported": ["python", "javascript", "typescript"],
+      "examples": [
+        "Generate new agent class",
+        "Refactor legacy code",
+        "Create test suite for module",
+        "Auto-generate API documentation"
+      ]
+    },
+    {
+      "id": "linting_formatting",
+      "name": "Linting & Code Formatting",
+      "description": "Enforce linting, formatting, and code style checks using Black, Flake8, and Prettier.",
+      "category": "code_quality",
+      "status": "active",
+      "capabilities": [
+        "run_black",
+        "run_flake8",
+        "run_prettier",
+        "generate_report"
+      ],
+      "dependencies": ["black", "flake8", "prettier"],
+      "examples": [
+        "Format Python code with Black",
+        "Lint Python files with Flake8",
+        "Fix formatting issues",
+        "Generate style report"
+      ]
+    },
+    {
+      "id": "testing",
+      "name": "Testing & Validation",
+      "description": "Run and update tests to ensure code quality. Supports unit, integration, and end-to-end tests.",
+      "category": "code_quality",
+      "status": "active",
+      "capabilities": [
+        "run_unit_tests",
+        "run_integration_tests",
+        "generate_coverage_report",
+        "update_test_suite"
+      ],
+      "dependencies": ["pytest"],
+      "examples": [
+        "Run full test suite",
+        "Run tests for specific module",
+        "Generate coverage report",
+        "Add new test cases"
+      ]
+    },
+    {
+      "id": "audit_logging",
+      "name": "Audit & Logging",
+      "description": "Log agent actions, decisions, and changes in logs/agent_log.txt. Maintain version history and commit messages.",
+      "category": "monitoring",
+      "status": "active",
+      "capabilities": [
+        "write_log_entry",
+        "format_timestamp",
+        "track_decisions",
+        "maintain_version_history"
+      ],
+      "dependencies": [],
+      "log_format": "[TIMESTAMP] AGENT_NAME: Action and details",
+      "examples": [
+        "Log task start",
+        "Log decision rationale",
+        "Log code changes",
+        "Log errors and recovery"
+      ]
+    },
+    {
+      "id": "rollback_recovery",
+      "name": "Rollback & Recovery",
+      "description": "Revert changes or roll back to previous versions if issues arise.",
+      "category": "maintenance",
+      "status": "active",
+      "capabilities": [
+        "revert_code",
+        "rollback_version",
+        "restore_backup",
+        "handle_errors"
+      ],
+      "dependencies": ["git"],
+      "examples": [
+        "Revert last commit",
+        "Rollback to previous version",
+        "Restore from backup",
+        "Handle critical errors"
+      ]
+    },
+    {
+      "id": "communication_escalation",
+      "name": "Communication & Escalation",
+      "description": "Update PM_FEEDBACK.md for support requests, escalate blockers/errors to PM, and log in CONTEXT.md.",
+      "category": "communication",
+      "status": "active",
+      "capabilities": [
+        "update_pm_feedback",
+        "escalate_blockers",
+        "update_context",
+        "request_approval"
+      ],
+      "dependencies": [],
+      "files_involved": [
+        "PM_FEEDBACK.md",
+        "CONTEXT.md",
+        "SKILL_GAPS.md",
+        "TOOL_INVESTIGATION.md"
+      ],
+      "examples": [
+        "Request human approval",
+        "Report blocker",
+        "Escalate critical issue",
+        "Request clarification"
+      ]
+    },
+    {
+      "id": "tool_investigation",
+      "name": "Tool Investigation & Evaluation",
+      "description": "Log new tool/skill suggestions in TOOL_INVESTIGATION.md and evaluate their value.",
+      "category": "research",
+      "status": "active",
+      "capabilities": [
+        "research_tools",
+        "test_integration",
+        "evaluate_performance",
+        "log_findings"
+      ],
+      "dependencies": [],
+      "examples": [
+        "Evaluate new Python library",
+        "Test third-party API",
+        "Assess tool performance",
+        "Document recommendation"
+      ]
+    },
+    {
+      "id": "continuous_improvement",
+      "name": "Continuous Improvement & Skill Gaps",
+      "description": "Identify and log skill gaps in SKILL_GAPS.md for framework evolution.",
+      "category": "improvement",
+      "status": "active",
+      "capabilities": [
+        "identify_gaps",
+        "log_requirements",
+        "prioritize_features",
+        "track_evolution"
+      ],
+      "dependencies": [],
+      "files_involved": ["SKILL_GAPS.md", "CONTEXT.md"],
+      "examples": [
+        "Identify missing capability",
+        "Log feature request",
+        "Prioritize improvements",
+        "Track framework evolution"
+      ]
+    }
+  ]
+}
