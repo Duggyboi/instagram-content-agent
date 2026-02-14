@@ -8,6 +8,9 @@ from dotenv import load_dotenv
 from pydantic_settings import BaseSettings
 from pydantic import Field
 
+# Import Streamlit app config
+from .app_config import AppConfig, LLMConfig as StreamlitLLMConfig, get_config as get_app_config
+
 # Load .env file
 load_dotenv()
 

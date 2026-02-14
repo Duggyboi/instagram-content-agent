@@ -136,5 +136,6 @@ Thumbs.db
 # Project specific
 *.db
 *.sqlite
+.env
 .env.local
 config/secrets.yml
