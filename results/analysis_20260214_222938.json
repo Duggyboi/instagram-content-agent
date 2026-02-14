@@ -1,0 +1,142 @@
+{
+  "file_name": "instagram_DUrgkd1DDbk.mp4",
+  "timestamp": "2026-02-14T22:27:51.461180",
+  "config": {
+    "steps": {
+      "transcription": true,
+      "summary": true,
+      "research": true,
+      "categorization": true,
+      "proofreading": true,
+      "impact": true
+    },
+    "llm_model": "ollama:llama2:13b",
+    "temperature": 0.7,
+    "ollama_host": "http://localhost:11434",
+    "ollama_model": "mistral",
+    "file_name": "instagram_DUrgkd1DDbk.mp4",
+    "timestamp": "2026-02-14T22:27:51.456064"
+  },
+  "transcription": "[Transcription error: Failed to load audio: ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers\r\n  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)\r\n  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband\r\n  libavutil      59. 39.100 / 59. 39.100\r\n  libavcodec     61. 19.100 / 61. 19.100\r\n  libavformat    61.  7.100 / 61.  7.100\r\n  libavdevice    61.  3.100 / 61.  3.100\r\n  libavfilter    10.  4.100 / 10.  4.100\r\n  libswscale      8.  3.100 /  8.  3.100\r\n  libswresample   5.  3.100 /  5.  3.100\r\n  libpostproc    58.  3.100 / 58.  3.100\r\n[mov,mp4,m4a,3gp,3g2,mj2 @ 0000017daa98fb40] Format mov,mp4,m4a,3gp,3g2,mj2 detected only with low score of 1, misdetection possible!\r\n[mov,mp4,m4a,3gp,3g2,mj2 @ 0000017daa98fb40] moov atom not found\r\n[in#0 @ 0000017daa98f740] Error opening input: Invalid data found when processing input\r\nError opening input file temp_uploads\\instagram_DUrgkd1DDbk.mp4.\r\nError opening input files: Invalid data found when processing input\r\n]",
+  "summary": {
+    "summary": "0 (Rev1, Built by MSYS2 project) configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband libavutil 59. 100 [mov,mp4,m4a,3gp,3g2,mj2 @ 0000017daa98fb40] Format mov,mp4,m4a,3gp,3g2,mj2 detected only with low score of 1, misdetection possible! [mov,mp4,m4a,3gp,3g2,mj2 @ 0000017daa98fb40] moov atom not found [in#0 @ 0000017daa98f740] Error opening input: Invalid data found when processing input Error opening input file temp_uploads\\instagram_DUrgkd1DDbk. Error opening input files: Invalid data found when processing input ].",
+    "key_takeaways": [
+      "1-essentials_build-www",
+      "dev Copyright (c) 2000-2024 the FFmpeg developers built with gcc 14",
+      "100 [mov,mp4,m4a,3gp,3g2,mj2 @ 0000017daa98fb40] Format mov,mp4,m4a,3gp,3g2,mj2 detected only with low score of 1, misdetection possible! [mov,mp4,m4a,3gp,3g2,mj2 @ 0000017daa98fb40] moov atom not found [in#0 @ 0000017daa98f740] Error opening input: Invalid data found when processing input Error opening input file temp_uploads\\instagram_DUrgkd1DDbk",
+      "Error opening input files: Invalid data found when processing input ]",
+      "[Transcription error: Failed to load audio: ffmpeg version 7"
+    ],
+    "char_count": 1969
+  },
+  "research": {
+    "findings": [
+      "Key insight on Mov,Mp4,M4A,3Gp,3G2,Mj2 @ 0000017Daa98Fb40: 100\r\n[mov,mp4,m4a,3gp,3g2,mj2 @ 0000017daa98fb40] Format mov,mp4,m4a,3gp,3g2,mj2 detected only with ...",
+      "Key insight on Invalid Data Found: 100\r\n[mov,mp4,m4a,3gp,3g2,mj2 @ 0000017daa98fb40] Format mov,mp4,m4a,3gp,3g2,mj2 detected only with ...",
+      "Key insight on Data Found When: 100\r\n[mov,mp4,m4a,3gp,3g2,mj2 @ 0000017daa98fb40] Format mov,mp4,m4a,3gp,3g2,mj2 detected only with ...",
+      "Key insight on Found When Processing: 100\r\n[mov,mp4,m4a,3gp,3g2,mj2 @ 0000017daa98fb40] Format mov,mp4,m4a,3gp,3g2,mj2 detected only with ...",
+      "Key insight on When Processing Input: 100\r\n[mov,mp4,m4a,3gp,3g2,mj2 @ 0000017daa98fb40] Format mov,mp4,m4a,3gp,3g2,mj2 detected only with ...",
+      "Key insight on Error Opening Input: 100\r\n[mov,mp4,m4a,3gp,3g2,mj2 @ 0000017daa98fb40] Format mov,mp4,m4a,3gp,3g2,mj2 detected only with ..."
+    ],
+    "search_terms_used": [
+      "mov,mp4,m4a,3gp,3g2,mj2 @ 0000017daa98fb40",
+      "invalid data found",
+      "data found when",
+      "found when processing",
+      "when processing input"
+    ],
+    "topics_extracted": [
+      "mov,mp4,m4a,3gp,3g2,mj2 @ 0000017daa98fb40",
+      "invalid data found",
+      "data found when",
+      "found when processing",
+      "when processing input",
+      "error opening input",
+      "error opening",
+      "invalid data"
+    ],
+    "research_areas": [
+      "Software Engineering",
+      "Web Technology"
+    ],
+    "num_findings": 6,
+    "num_topics": 8
+  },
+  "categorization": {
+    "categories": [
+      {
+        "name": "Educational",
+        "confidence": 100
+      },
+      {
+        "name": "Technology",
+        "confidence": 72
+      },
+      {
+        "name": "Science",
+        "confidence": 58
+      }
+    ],
+    "tags": [
+      "transcription",
+      "failed",
+      "copyright",
+      "built",
+      "format",
+      "error",
+      "invalid",
+      "process",
+      "build",
+      "code",
+      "data",
+      "mov,mp4,m4a,3gp,3g2,mj2-@-0000017daa98fb40"
+    ],
+    "primary_category": "Educational",
+    "num_categories": 3,
+    "num_tags": 12
+  },
+  "validation_metadata": {
+    "validated": true,
+    "validation_timestamp": "2026-02-14T22:27:53.958515",
+    "model_used": "mistral",
+    "validation_results": {
+      "transcription": {
+        "quality_score": 100,
+        "char_count": 1969,
+        "word_count": 178,
+        "issues": [],
+        "ollama_assessment": "The provided transcription contains significant errors and lacks coherence, as it appears to be a log from an ffmpeg build rather than a transcribed conversation. Major words or phrases are missing, and the text includes technical information that is not relevant to a transcription. The quality of this transcription is low."
+      },
+      "summary": {
+        "quality_score": 100,
+        "takeaway_count": 5,
+        "summary_length": 1477,
+        "issues": [],
+        "ollama_assessment": ""
+      },
+      "research": {
+        "quality_score": 100,
+        "findings_count": 6,
+        "topics_count": 8,
+        "research_areas": [
+          "Software Engineering",
+          "Web Technology"
+        ],
+        "issues": [],
+        "ollama_assessment": ""
+      },
+      "categorization": {
+        "quality_score": 100,
+        "category_count": 3,
+        "primary_category": "Educational",
+        "tag_count": 12,
+        "issues": [],
+        "ollama_assessment": "The main topic and primary category appear to be somewhat relevant but not fully accurate. The content is about software engineering (specifically, discussing the version of FFmpeg), but it's not educational content in a traditional sense as it seems to be a log or output rather than instructional material.\n\nThe research area of Web Technology is also associated with the discussion of FFmpeg, as it is a multimedia framework often used for streaming media over the web, but it's more closely related to Software Engineering.\n\nRating: 6/10"
+      }
+    }
+  },
+  "impact": {
+    "affected_projects": [],
+    "actionable_insights": []
+  }
+}

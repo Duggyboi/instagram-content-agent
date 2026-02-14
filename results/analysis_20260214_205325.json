@@ -1,0 +1,125 @@
+{
+  "file_name": "instagram_DUmYulaEVof.mp4",
+  "timestamp": "2026-02-14T20:53:19.363948",
+  "config": {
+    "whisper_model": "base",
+    "whisper_device": "cpu",
+    "language": "en"
+  },
+  "transcription": "If you watch these three videos, you'll know more about RAAG than 99% of people. First, RAAG and LLM fine-tuning. This video explains what RAAG actually is and when you should use it over another technique. It includes a quiz to make sure you actually understand the concepts and it's taught by a former data scientist at Google and staff machine learning engineer at GitHub. Next, watch building enterprise RAAG solutions. This teaches you how real companies actually build large-scale RAAG systems. It's incredibly useful both for AI engineering interviews and for building personal projects that you want to actually scale. Tought by a former Google research scientist. Third, retrieval evaluation. A lot of people can build a simple RAAG system, but not many people can build an excellent one and that's because they don't know how to evaluate the results. This is still a new and developing skill set and I guarantee you'll stand out if you know this. Follow on comment RAAG and I'll send the links to all three lectures.",
+  "summary": {
+    "summary": "It includes a quiz to make sure you actually understand the concepts and it's taught by a former data scientist at Google and staff machine learning engineer at GitHub. It's incredibly useful both for AI engineering interviews and for building personal projects that you want to actually scale. A lot of people can build a simple RAAG system, but not many people can build an excellent one and that's because they don't know how to evaluate the results.",
+    "key_takeaways": [
+      "It includes a quiz to make sure you actually understand the concepts and it's taught by a former data scientist at Google and staff machine learning engineer at GitHub",
+      "A lot of people can build a simple RAAG system, but not many people can build an excellent one and that's because they don't know how to evaluate the results",
+      "It's incredibly useful both for AI engineering interviews and for building personal projects that you want to actually scale",
+      "This is still a new and developing skill set and I guarantee you'll stand out if you know this",
+      "This video explains what RAAG actually is and when you should use it over another technique"
+    ],
+    "char_count": 1026
+  },
+  "research": {
+    "findings": [
+      {
+        "title": "ing enterprise RAAG solutions. This teaches you",
+        "snippet": "y a former data scientist at Google and staff machine learning engineer at GitHub. Next, watch building enterprise RAAG solutions. This teaches you how real companies actually build large-scale RAAG s",
+        "relevance": 0.8,
+        "source_type": "transcription_analysis",
+        "context": "mentioned in video"
+      },
+      {
+        "title": "use it over another technique. It includes a quiz",
+        "snippet": "ple. First, RAAG and LLM fine-tuning. This video explains what RAAG actually is and when you should use it over another technique. It includes a quiz to make sure you actually understand the concepts ",
+        "relevance": 0.8,
+        "source_type": "transcription_analysis",
+        "context": "mentioned in video"
+      },
+      {
+        "title": "by a former Google research scientist. Third, r",
+        "snippet": "I engineering interviews and for building personal projects that you want to actually scale. Tought by a former Google research scientist. Third, retrieval evaluation. A lot of people can build a simp",
+        "relevance": 0.8,
+        "source_type": "transcription_analysis",
+        "context": "mentioned in video"
+      },
+      {
+        "title": "If",
+        "snippet": "If you watch these three videos, you'll know more about RAAG than 99% of people. First, RAAG and LLM f",
+        "relevance": 0.8,
+        "source_type": "transcription_analysis",
+        "context": "mentioned in video"
+      },
+      {
+        "title": "First",
+        "snippet": "If you watch these three videos, you'll know more about RAAG than 99% of people. First, RAAG and LLM fine-tuning. This video explains what RAAG actually is and when you should use it ove",
+        "relevance": 0.8,
+        "source_type": "transcription_analysis",
+        "context": "mentioned in video"
+      },
+      {
+        "title": "Suggested Research Direction",
+        "snippet": "Consider performing web searches for the topics mentioned to find external resources and validation",
+        "relevance": 0.7,
+        "source_type": "research_recommendation",
+        "context": "automated suggestion"
+      }
+    ],
+    "search_terms_used": [
+      "ing enterprise RAAG solutions. This teaches you",
+      "use it over another technique. It includes a quiz",
+      "by a former Google research scientist. Third, r",
+      "If",
+      "First"
+    ],
+    "topics_extracted": [
+      "ing enterprise RAAG solutions. This teaches you",
+      "use it over another technique. It includes a quiz",
+      "by a former Google research scientist. Third, r",
+      "If",
+      "First"
+    ],
+    "num_findings": 6
+  },
+  "categorization": {
+    "categories": [
+      {
+        "name": "Entertainment",
+        "confidence": 100
+      },
+      {
+        "name": "How-to",
+        "confidence": 100
+      },
+      {
+        "name": "Educational",
+        "confidence": 75
+      },
+      {
+        "name": "Science",
+        "confidence": 50
+      },
+      {
+        "name": "Tutorial",
+        "confidence": 25
+      }
+    ],
+    "tags": [
+      "first",
+      "this",
+      "google",
+      "next",
+      "tought",
+      "third",
+      "follow",
+      "learn",
+      "explain",
+      "teach"
+    ],
+    "primary_category": "Entertainment",
+    "num_categories": 5,
+    "num_tags": 10
+  },
+  "impact": {
+    "affected_projects": [],
+    "actionable_insights": []
+  }
+}

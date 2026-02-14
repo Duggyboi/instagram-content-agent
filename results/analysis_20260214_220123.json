@@ -1,0 +1,124 @@
+{
+  "file_name": "instagram_DT27XoikXge.mp4",
+  "timestamp": "2026-02-14T22:01:20.267306",
+  "config": {
+    "steps": {
+      "transcription": true,
+      "summary": true,
+      "research": true,
+      "categorization": true,
+      "impact": true
+    },
+    "llm_model": "ollama:llama2:13b",
+    "temperature": 0.7,
+    "file_name": "instagram_DT27XoikXge.mp4",
+    "timestamp": "2026-02-14T22:01:20.267306"
+  },
+  "transcription": "MCP has a huge problem. When you load up an LLM with MCP servers installed, the first thing it does is ask those MCP servers to list their tools. Each server then responds with a list of tools and their descriptions, which are injected directly into the context window of your large language model. Here's the problem. While modern large language models do have huge context windows, the more of that context you use, the worse the performance of the model actually gets. This is something people call context rod. Now, your best performing tokens, the earliest context is wasted on tool definitions of tools that you might never actually use. If you want to go deeper and learn MCP best practices, comment MCP and I'll send you a free resource.",
+  "summary": {
+    "summary": "Each server then responds with a list of tools and their descriptions, which are injected directly into the context window of your large language model. While modern large language models do have huge context windows, the more of that context you use, the worse the performance of the model actually gets. Now, your best performing tokens, the earliest context is wasted on tool definitions of tools that you might never actually use.",
+    "key_takeaways": [
+      "When you load up an LLM with MCP servers installed, the first thing it does is ask those MCP servers to list their tools",
+      "Each server then responds with a list of tools and their descriptions, which are injected directly into the context window of your large language model",
+      "While modern large language models do have huge context windows, the more of that context you use, the worse the performance of the model actually gets",
+      "This is something people call context rod",
+      "Now, your best performing tokens, the earliest context is wasted on tool definitions of tools that you might never actually use"
+    ],
+    "char_count": 745
+  },
+  "research": {
+    "findings": [
+      {
+        "title": "rvers to list their tools. Each server then",
+        "snippet": "lem. When you load up an LLM with MCP servers installed, the first thing it does is ask those MCP servers to list their tools. Each server then responds with a list of tools and their descriptions, wh",
+        "relevance": 0.8,
+        "source_type": "transcription_analysis",
+        "context": "mentioned in video"
+      },
+      {
+        "title": "When",
+        "snippet": "MCP has a huge problem. When you load up an LLM with MCP servers installed, the first thing it does is ask those MCP servers to",
+        "relevance": 0.8,
+        "source_type": "transcription_analysis",
+        "context": "mentioned in video"
+      },
+      {
+        "title": "Each",
+        "snippet": "M with MCP servers installed, the first thing it does is ask those MCP servers to list their tools. Each server then responds with a list of tools and their descriptions, which are injected directly i",
+        "relevance": 0.8,
+        "source_type": "transcription_analysis",
+        "context": "mentioned in video"
+      },
+      {
+        "title": "Here",
+        "snippet": "eir descriptions, which are injected directly into the context window of your large language model. Here's the problem. While modern large language models do have huge context windows, the more of tha",
+        "relevance": 0.8,
+        "source_type": "transcription_analysis",
+        "context": "mentioned in video"
+      },
+      {
+        "title": "While",
+        "snippet": "ich are injected directly into the context window of your large language model. Here's the problem. While modern large language models do have huge context windows, the more of that context you use, t",
+        "relevance": 0.8,
+        "source_type": "transcription_analysis",
+        "context": "mentioned in video"
+      },
+      {
+        "title": "Suggested Research Direction",
+        "snippet": "Consider performing web searches for the topics mentioned to find external resources and validation",
+        "relevance": 0.7,
+        "source_type": "research_recommendation",
+        "context": "automated suggestion"
+      }
+    ],
+    "search_terms_used": [
+      "rvers to list their tools. Each server then",
+      "When",
+      "Each",
+      "Here",
+      "While"
+    ],
+    "topics_extracted": [
+      "rvers to list their tools. Each server then",
+      "When",
+      "Each",
+      "Here",
+      "While"
+    ],
+    "num_findings": 6
+  },
+  "categorization": {
+    "categories": [
+      {
+        "name": "Music",
+        "confidence": 100
+      },
+      {
+        "name": "Educational",
+        "confidence": 50
+      },
+      {
+        "name": "Entertainment",
+        "confidence": 50
+      }
+    ],
+    "tags": [
+      "when",
+      "each",
+      "here",
+      "while",
+      "this",
+      "now",
+      "learn",
+      "performance",
+      "perform"
+    ],
+    "primary_category": "Music",
+    "num_categories": 3,
+    "num_tags": 9
+  },
+  "impact": {
+    "affected_projects": [],
+    "actionable_insights": []
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "file_name": "instagram_DUi0OxzEf7j.mp4",
+  "timestamp": "2026-02-14T21:10:50.154895",
+  "config": {
+    "steps": {
+      "transcription": true,
+      "summary": true,
+      "research": true,
+      "categorization": true,
+      "impact": true
+    },
+    "llm_model": "ollama:llama2:13b",
+    "temperature": 0.7,
+    "file_name": "instagram_DUi0OxzEf7j.mp4",
+    "timestamp": "2026-02-14T21:10:50.144716"
+  },
+  "transcription": "and Throp it just released a 33 page guide on how to build skills. Here's what you should know. First, a skill is just a folder that teaches Clod how to do a repeatable workflow. It always has this exact structure. Second, skills use something called progressive disclosure to make sure that Clod doesn't waste a bunch of contacts loading in the entire skill at once. The front matter of every attached skill is always loaded, but the body's only come when Clod actually wants to invoke that skill. Third, spend a lot of time writing the description for your skill. This is part of the front matter that's always loaded and it helps Clod to decide whether it wants to invoke your skill or not. Good examples are specific include trigger phrases and clearly show the value proposition. That examples are vague and don't include triggers. Tip four is include error handling. Failures are one of the givens of software development and your skills should give the agent some guidance around what to do for common failure cases. Fifth is test your skills. You can manually test your skills directly in Clod browser or desktop or you can run a scripted test in something like Clod Code. If you want a full video walk through on how to build these skills, comment Clod and I'll send it over.",
+  "summary": {
+    "summary": "Second, skills use something called progressive disclosure to make sure that Clod doesn't waste a bunch of contacts loading in the entire skill at once. The front matter of every attached skill is always loaded, but the body's only come when Clod actually wants to invoke that skill. You can manually test your skills directly in Clod browser or desktop or you can run a scripted test in something Clod Code.",
+    "key_takeaways": [
+      "and Throp it just released a 33 page guide on how to build skills",
+      "Second, skills use something called progressive disclosure to make sure that Clod doesn't waste a bunch of contacts loading in the entire skill at once",
+      "The front matter of every attached skill is always loaded, but the body's only come when Clod actually wants to invoke that skill",
+      "This is part of the front matter that's always loaded and it helps Clod to decide whether it wants to invoke your skill or not",
+      "Failures are one of the givens of software development and your skills should give the agent some guidance around what to do for common failure cases"
+    ],
+    "char_count": 1284
+  },
+  "research": {
+    "findings": [
+      {
+        "title": "givens of software development and your skills sho",
+        "snippet": "s are vague and don't include triggers. Tip four is include error handling. Failures are one of the givens of software development and your skills should give the agent some guidance around what to do",
+        "relevance": 0.8,
+        "source_type": "transcription_analysis",
+        "context": "mentioned in video"
+      },
+      {
+        "title": "ure cases. Fifth is test your skills. You ca",
+        "snippet": "re development and your skills should give the agent some guidance around what to do for common failure cases. Fifth is test your skills. You can manually test your skills directly in Clod browser or ",
+        "relevance": 0.8,
+        "source_type": "transcription_analysis",
+        "context": "mentioned in video"
+      },
+      {
+        "title": "Throp",
+        "snippet": "and Throp it just released a 33 page guide on how to build skills. Here's what you should know. First, a skil",
+        "relevance": 0.8,
+        "source_type": "transcription_analysis",
+        "context": "mentioned in video"
+      },
+      {
+        "title": "Here",
+        "snippet": "and Throp it just released a 33 page guide on how to build skills. Here's what you should know. First, a skill is just a folder that teaches Clod how to do a repeatable wo",
+        "relevance": 0.8,
+        "source_type": "transcription_analysis",
+        "context": "mentioned in video"
+      },
+      {
+        "title": "First",
+        "snippet": "and Throp it just released a 33 page guide on how to build skills. Here's what you should know. First, a skill is just a folder that teaches Clod how to do a repeatable workflow. It always has this ex",
+        "relevance": 0.8,
+        "source_type": "transcription_analysis",
+        "context": "mentioned in video"
+      },
+      {
+        "title": "Suggested Research Direction",
+        "snippet": "Consider performing web searches for the topics mentioned to find external resources and validation",
+        "relevance": 0.7,
+        "source_type": "research_recommendation",
+        "context": "automated suggestion"
+      }
+    ],
+    "search_terms_used": [
+      "givens of software development and your skills sho",
+      "ure cases. Fifth is test your skills. You ca",
+      "Throp",
+      "Here",
+      "First"
+    ],
+    "topics_extracted": [
+      "givens of software development and your skills sho",
+      "ure cases. Fifth is test your skills. You ca",
+      "Throp",
+      "Here",
+      "First"
+    ],
+    "num_findings": 6
+  },
+  "categorization": {
+    "categories": [
+      {
+        "name": "How-to",
+        "confidence": 100
+      },
+      {
+        "name": "Tutorial",
+        "confidence": 80
+      },
+      {
+        "name": "Entertainment",
+        "confidence": 40
+      },
+      {
+        "name": "Technology",
+        "confidence": 40
+      },
+      {
+        "name": "Educational",
+        "confidence": 20
+      }
+    ],
+    "tags": [
+      "throp",
+      "here",
+      "first",
+      "clod",
+      "second",
+      "the",
+      "third",
+      "this",
+      "good",
+      "that"
+    ],
+    "primary_category": "How-to",
+    "num_categories": 5,
+    "num_tags": 10
+  },
+  "impact": {
+    "affected_projects": [],
+    "actionable_insights": []
+  }
+}

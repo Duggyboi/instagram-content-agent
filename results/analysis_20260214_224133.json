@@ -1,0 +1,109 @@
+{
+  "file_name": "instagram_DTOoyjwDQ5x.mp4",
+  "timestamp": "2026-02-14T22:41:25.079397",
+  "config": {
+    "steps": {
+      "transcription": true,
+      "summary": true,
+      "research": true,
+      "categorization": true,
+      "proofreading": false,
+      "impact": true
+    },
+    "llm_model": "ollama:llama2:13b",
+    "temperature": 0.7,
+    "ollama_host": "http://localhost:11434",
+    "ollama_model": "mistral",
+    "file_name": "instagram_DTOoyjwDQ5x.mp4",
+    "timestamp": "2026-02-14T22:41:25.078394"
+  },
+  "transcription": "So if you use Cloud Code at all, you should 100% check out this repo. It's the GetShedDone repo. It came out like three weeks ago, already has 500 stars. But it's this really clever, context engineering orchestration layer that lives on top of Cloud Code. Now, I won't go into extreme detail of how this works. You can go ahead and check out the repo, it explains it all. But a big picture of what it does is it solves the context rot problem with Cloud Code. Now, if you don't know what context rot is, context rot means the first token is more powerful than the 100,000s token, right? Cloud Code has 200,000 token limit, but it gets less effective over time. This isn't just a Cloud Code problem, this is a LLM problem. And GetShedDone, this repo actually solves that to an extent. And how it does that is explained right here. So you come up with a plan, right? I'm trying to create some sort of project. Then each plan gets broken up into phases, and each phase has it a maximum of three tasks. And each of those three tasks is then attacked by a fresh sub agent. So it gets the full 200,000 token context winner to work with instead of the normal Cloud Code system where it's just attacking everything at once. And you are having to deal with compact issues. And again, you're fighting token rot every step of the way. This solves that problem. On top of that, I found it's essentially just like planning mode on steroids. There's a really good job of breaking down how you need to build things out. Step by step. So definitely check it out. Really cool repo. I've been loving it.",
+  "summary": {
+    "summary": "But a big picture of what it does is it solves the context rot problem with Cloud Code. Now, if you don't know what context rot is, context rot means the first token is more powerful than the 100,000s token, right? Cloud Code has 200,000 token limit, but it gets less effective over time. So it gets the full 200,000 token context winner to work with instead of the normal Cloud Code system where it's just attacking everything at once.",
+    "key_takeaways": [
+      "So if you use Cloud Code at all, you should 100% check out this repo",
+      "But it's this really clever, context engineering orchestration layer that lives on top of Cloud Code",
+      "But a big picture of what it does is it solves the context rot problem with Cloud Code",
+      "Now, if you don't know what context rot is, context rot means the first token is more powerful than the 100,000s token, right? Cloud Code has 200,000 token limit, but it gets less effective over time",
+      "So it gets the full 200,000 token context winner to work with instead of the normal Cloud Code system where it's just attacking everything at once"
+    ],
+    "char_count": 1585
+  },
+  "research": {
+    "findings": [
+      "Topic 'Cloud Code' is significant in the broader context of content analysis.",
+      "Key insight on 200,000 Token: Now, if you don't know what context rot is, context rot means the first token is more powerful than ...",
+      "Topic 'Three Tasks' is significant in the broader context of content analysis.",
+      "Topic 'Cloud' is significant in the broader context of content analysis.",
+      "Topic 'Context' is significant in the broader context of content analysis."
+    ],
+    "search_terms_used": [
+      "cloud code now",
+      "cloud code",
+      "200,000 token",
+      "three tasks",
+      "cloud"
+    ],
+    "topics_extracted": [
+      "cloud code now",
+      "cloud code",
+      "200,000 token",
+      "three tasks",
+      "cloud",
+      "context",
+      "token",
+      "repo"
+    ],
+    "research_areas": [
+      "Machine Learning",
+      "Software Engineering"
+    ],
+    "num_findings": 5,
+    "num_topics": 8
+  },
+  "categorization": {
+    "categories": [
+      {
+        "name": "Educational",
+        "confidence": 100
+      },
+      {
+        "name": "Technology",
+        "confidence": 80
+      },
+      {
+        "name": "Science",
+        "confidence": 54
+      },
+      {
+        "name": "Tutorial",
+        "confidence": 5
+      },
+      {
+        "name": "How-to",
+        "confidence": 3
+      }
+    ],
+    "tags": [
+      "cloud code",
+      "but",
+      "now",
+      "you",
+      "this",
+      "and",
+      "then",
+      "there",
+      "step",
+      "really",
+      "explain",
+      "breaking"
+    ],
+    "primary_category": "Educational",
+    "num_categories": 5,
+    "num_tags": 12
+  },
+  "impact": {
+    "affected_projects": [],
+    "actionable_insights": []
+  }
+}

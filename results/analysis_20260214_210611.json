@@ -1,0 +1,133 @@
+{
+  "file_name": "instagram_DUrebQYDCe_.mp4",
+  "timestamp": "2026-02-14T21:06:02.051502",
+  "config": {
+    "steps": {
+      "transcription": true,
+      "summary": true,
+      "research": true,
+      "categorization": true,
+      "impact": true
+    },
+    "llm_model": "ollama:llama2:13b",
+    "temperature": 0.5,
+    "file_name": "instagram_DUrebQYDCe_.mp4",
+    "timestamp": "2026-02-14T21:06:02.042584"
+  },
+  "transcription": "Here's how I built the landing page for my startup and look at this cute little dude with NanoBanana, VO3, and Claude Code. My startup is called CoinTally. It helps crypto traders calculate their taxes and submit to the IRS in the United States. And this little guy is Tallybot. Tallybot looks like a really nice 3D animation, but actually he's just an AI-generated video. I started off by going to NanoBanana Pro in generating this image of Tallybot and combining him with our icon to generate this branded version of Tallybot. And I brought the image into VO3 and generated this funny video of him spinning a bitcoin. Because I knew I wanted to embed the video on my website, I made sure the background was all green pixels so that I could use a software package called FFMPEG to remove all of the green pixels to make the background transparent. Then I had Claude Code convert this background into all the necessary supported file types so that it can be viewed on all browsers, mobile, and desktop, and then embedded it all over my site. This technique is a really cool hack to get something that looks like a really nice 3D animated element on your site, but in reality it's just an AI-generated video. If you want to learn more cool techniques like this, I have a school community where I teach how to use AI to generate software and organize your business. We would love to see you there at Lincoln Bio.",
+  "summary": {
+    "summary": "I started off by going to NanoBanana Pro in generating this image of Tallybot and combining him with our icon to generate this branded version of Tallybot. Because I knew I wanted to embed the video on my website, I made sure the background was all green pixels so that I could use a software package called FFMPEG to remove all of the green pixels to make the background transparent. This technique is a really cool hack to get something that looks like a really nice 3D animated element on your site, but in reality it's just an AI-generated video.",
+    "key_takeaways": [
+      "If you want to learn more cool techniques like this, I have a school community where I teach how to use AI to generate software and organize your business",
+      "Because I knew I wanted to embed the video on my website, I made sure the background was all green pixels so that I could use a software package called FFMPEG to remove all of the green pixels to make the background transparent",
+      "Then I had Claude Code convert this background into all the necessary supported file types so that it can be viewed on all browsers, mobile, and desktop, and then embedded it all over my site",
+      "This technique is a really cool hack to get something that looks like a really nice 3D animated element on your site, but in reality it's just an AI-generated video",
+      "I started off by going to NanoBanana Pro in generating this image of Tallybot and combining him with our icon to generate this branded version of Tallybot"
+    ],
+    "char_count": 1410
+  },
+  "research": {
+    "findings": [
+      {
+        "title": "over my site. This technique is a really cool ha",
+        "snippet": "file types so that it can be viewed on all browsers, mobile, and desktop, and then embedded it all over my site. This technique is a really cool hack to get something that looks like a really nice 3D ",
+        "relevance": 0.8,
+        "source_type": "transcription_analysis",
+        "context": "mentioned in video"
+      },
+      {
+        "title": "Here",
+        "snippet": "Here's how I built the landing page for my startup and look at this cute little dude with NanoBanana, VO",
+        "relevance": 0.8,
+        "source_type": "transcription_analysis",
+        "context": "mentioned in video"
+      },
+      {
+        "title": "Claude Code",
+        "snippet": "I built the landing page for my startup and look at this cute little dude with NanoBanana, VO3, and Claude Code. My startup is called CoinTally. It helps crypto traders calculate their taxes and submi",
+        "relevance": 0.8,
+        "source_type": "transcription_analysis",
+        "context": "mentioned in video"
+      },
+      {
+        "title": "My",
+        "snippet": "Here's how I built the landing page for my startup and look at this cute little dude with NanoBanana, VO3, and Claude Code. My startup is call",
+        "relevance": 0.8,
+        "source_type": "transcription_analysis",
+        "context": "mentioned in video"
+      },
+      {
+        "title": "It",
+        "snippet": "Here's how I built the landing page for my startup and look at this cute little dude with NanoBanana, VO3, and Claude Code. My startup is called CoinTally. It helps crypto trad",
+        "relevance": 0.8,
+        "source_type": "transcription_analysis",
+        "context": "mentioned in video"
+      },
+      {
+        "title": "Suggested Research Direction",
+        "snippet": "Consider performing web searches for the topics mentioned to find external resources and validation",
+        "relevance": 0.7,
+        "source_type": "research_recommendation",
+        "context": "automated suggestion"
+      }
+    ],
+    "search_terms_used": [
+      "over my site. This technique is a really cool ha",
+      "Here",
+      "Claude Code",
+      "My",
+      "It"
+    ],
+    "topics_extracted": [
+      "over my site. This technique is a really cool ha",
+      "Here",
+      "Claude Code",
+      "My",
+      "It"
+    ],
+    "num_findings": 6
+  },
+  "categorization": {
+    "categories": [
+      {
+        "name": "Technology",
+        "confidence": 100
+      },
+      {
+        "name": "How-to",
+        "confidence": 83
+      },
+      {
+        "name": "Entertainment",
+        "confidence": 66
+      },
+      {
+        "name": "Art",
+        "confidence": 50
+      },
+      {
+        "name": "Educational",
+        "confidence": 33
+      }
+    ],
+    "tags": [
+      "here",
+      "claude code",
+      "united states",
+      "and",
+      "tallybot",
+      "pro",
+      "because",
+      "then",
+      "this",
+      "lincoln bio"
+    ],
+    "primary_category": "Technology",
+    "num_categories": 5,
+    "num_tags": 10
+  },
+  "impact": {
+    "affected_projects": [],
+    "actionable_insights": []
+  }
+}

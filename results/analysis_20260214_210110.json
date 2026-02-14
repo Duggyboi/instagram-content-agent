@@ -1,0 +1,133 @@
+{
+  "file_name": "instagram_DUn3D4JEV0D.mp4",
+  "timestamp": "2026-02-14T21:01:01.516157",
+  "config": {
+    "steps": {
+      "transcription": true,
+      "summary": true,
+      "research": true,
+      "categorization": true,
+      "impact": true
+    },
+    "llm_model": "ollama:llama2:13b",
+    "temperature": 0.7,
+    "file_name": "instagram_DUn3D4JEV0D.mp4",
+    "timestamp": "2026-02-14T21:01:01.507624"
+  },
+  "transcription": "Here's exactly how I would learn Agent-A-I in 2026. First, Agent-A-I system design. Most people jump right into building AI agents without first designing the team and the system. You need to be defining roles, handoffs, and delegations for every type of agent in your system to make sure they can actually work together. This free lecture will teach you how to do that. Second, how to actually build and deploy these agents. You don't need to manually drag around nodes and NN anymore. Claude code can actually build and deploy agents for you now. And this lecture will walk you through exactly how to get that set up. Third, orchestrating autonomous agents. You may have heard of Claudebot or OpenClaw, whatever it's going by now. This is much more powerful than something like Claude code. It can actually do whatever it wants. This is super powerful, but also super dangerous if you do it wrong. Here, you need to know how to design things like the control plane, the permissions models, and failure cases. You also need to prevent unbounded usage, runaway behavior, and infinite loops that cost you money. This lecture will teach you how to handle that kind of agency. Comment agent for all three links.",
+  "summary": {
+    "summary": "You need to be defining roles, handoffs, and delegations for every type of agent in your system to make sure they can actually work together. Second, how to actually build and deploy these agents. Claude code can actually build and deploy agents for you now.",
+    "key_takeaways": [
+      "Here's exactly how I would learn Agent-A-I in 2026",
+      "You need to be defining roles, handoffs, and delegations for every type of agent in your system to make sure they can actually work together",
+      "Here, you need to know how to design things like the control plane, the permissions models, and failure cases",
+      "You also need to prevent unbounded usage, runaway behavior, and infinite loops that cost you money",
+      "Most people jump right into building AI agents without first designing the team and the system"
+    ],
+    "char_count": 1208
+  },
+  "research": {
+    "findings": [
+      {
+        "title": "Here",
+        "snippet": "Here's exactly how I would learn Agent-A-I in 2026. First, Agent-A-I system design. Most people jump rig",
+        "relevance": 0.8,
+        "source_type": "transcription_analysis",
+        "context": "mentioned in video"
+      },
+      {
+        "title": "Agent",
+        "snippet": "Here's exactly how I would learn Agent-A-I in 2026. First, Agent-A-I system design. Most people jump right into building AI agents without",
+        "relevance": 0.8,
+        "source_type": "transcription_analysis",
+        "context": "mentioned in video"
+      },
+      {
+        "title": "First",
+        "snippet": "Here's exactly how I would learn Agent-A-I in 2026. First, Agent-A-I system design. Most people jump right into building AI agents without first designing th",
+        "relevance": 0.8,
+        "source_type": "transcription_analysis",
+        "context": "mentioned in video"
+      },
+      {
+        "title": "Most",
+        "snippet": "Here's exactly how I would learn Agent-A-I in 2026. First, Agent-A-I system design. Most people jump right into building AI agents without first designing the team and the system. You need",
+        "relevance": 0.8,
+        "source_type": "transcription_analysis",
+        "context": "mentioned in video"
+      },
+      {
+        "title": "You",
+        "snippet": "gn. Most people jump right into building AI agents without first designing the team and the system. You need to be defining roles, handoffs, and delegations for every type of agent in your system to m",
+        "relevance": 0.8,
+        "source_type": "transcription_analysis",
+        "context": "mentioned in video"
+      },
+      {
+        "title": "Suggested Research Direction",
+        "snippet": "Consider performing web searches for the topics mentioned to find external resources and validation",
+        "relevance": 0.7,
+        "source_type": "research_recommendation",
+        "context": "automated suggestion"
+      }
+    ],
+    "search_terms_used": [
+      "Here",
+      "Agent",
+      "First",
+      "Most",
+      "You"
+    ],
+    "topics_extracted": [
+      "Here",
+      "Agent",
+      "First",
+      "Most",
+      "You"
+    ],
+    "num_findings": 6
+  },
+  "categorization": {
+    "categories": [
+      {
+        "name": "How-to",
+        "confidence": 100
+      },
+      {
+        "name": "Educational",
+        "confidence": 60
+      },
+      {
+        "name": "Tutorial",
+        "confidence": 60
+      },
+      {
+        "name": "Art",
+        "confidence": 60
+      },
+      {
+        "name": "Technology",
+        "confidence": 40
+      }
+    ],
+    "tags": [
+      "here",
+      "agent",
+      "first",
+      "most",
+      "you",
+      "this",
+      "second",
+      "claude",
+      "and",
+      "third"
+    ],
+    "primary_category": "How-to",
+    "num_categories": 5,
+    "num_tags": 10
+  },
+  "impact": {
+    "affected_projects": [],
+    "actionable_insights": []
+  }
+}

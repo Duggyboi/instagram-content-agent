@@ -1,0 +1,105 @@
+{
+  "file_name": "instagram_DSumX50iVt2.mp4",
+  "timestamp": "2026-02-14T22:39:30.083557",
+  "config": {
+    "steps": {
+      "transcription": true,
+      "summary": true,
+      "research": true,
+      "categorization": true,
+      "proofreading": false,
+      "impact": true
+    },
+    "llm_model": "ollama:llama2:13b",
+    "temperature": 0.7,
+    "ollama_host": "http://localhost:11434",
+    "ollama_model": "mistral",
+    "file_name": "instagram_DSumX50iVt2.mp4",
+    "timestamp": "2026-02-14T22:39:30.074668"
+  },
+  "transcription": "This new AI model from China is 7 times cheaper than Claude while beating GPT-5 on benchmark. It's called GLM4.7 from ZAI, and it's currently ranked as the best performing model in the open source community. It works on something called preserved thinking. Unlike other AI models that forget context between messages, GLM4.7 actually remembers its reasoning across an entire conversation. This model has 355 billion parameters, but only uses 32 billion at a time, which makes it insanely efficient. It can ride code, handle complex multi-step tasks, and it can even one shot 2D and 3D games and physics simulations better than most AI tools out there. And because it's fully open source, developers can download the entire model and run it on their own computers without paying anyone. We're now seeing the gap between open source and proprietary AI models shrink to just 3 to 4 months, and China continues to be the only country dominating top tier open source models.",
+  "summary": {
+    "summary": "7 from ZAI, and it's currently ranked as the best performing model in the open source community. And because it's fully open source, developers can download the entire model and run it on their own computers without paying anyone. We're now seeing the gap between open source and proprietary AI models shrink to just 3 to 4 months, and China continues to be the only country dominating top tier open source models.",
+    "key_takeaways": [
+      "7 from ZAI, and it's currently ranked as the best performing model in the open source community",
+      "Unlike other AI models that forget context between messages, GLM4",
+      "This model has 355 billion parameters, but only uses 32 billion at a time, which makes it insanely efficient",
+      "And because it's fully open source, developers can download the entire model and run it on their own computers without paying anyone",
+      "We're now seeing the gap between open source and proprietary AI models shrink to just 3 to 4 months, and China continues to be the only country dominating top tier open source models"
+    ],
+    "char_count": 969
+  },
+  "research": {
+    "findings": [
+      "Topic 'Open Source' is significant in the broader context of content analysis.",
+      "Topic 'Model' is significant in the broader context of content analysis.",
+      "Topic 'Source' is significant in the broader context of content analysis.",
+      "Topic 'Models' is significant in the broader context of content analysis.",
+      "Topic 'China' is significant in the broader context of content analysis.",
+      "Topic 'Called' is significant in the broader context of content analysis."
+    ],
+    "search_terms_used": [
+      "open source",
+      "model",
+      "source",
+      "models",
+      "china"
+    ],
+    "topics_extracted": [
+      "open source",
+      "model",
+      "source",
+      "models",
+      "china",
+      "called",
+      "This",
+      "Claude"
+    ],
+    "research_areas": [
+      "Machine Learning"
+    ],
+    "num_findings": 6,
+    "num_topics": 8
+  },
+  "categorization": {
+    "categories": [
+      {
+        "name": "Educational",
+        "confidence": 100
+      },
+      {
+        "name": "Technology",
+        "confidence": 74
+      },
+      {
+        "name": "Science",
+        "confidence": 54
+      },
+      {
+        "name": "Tutorial",
+        "confidence": 1
+      }
+    ],
+    "tags": [
+      "this",
+      "china",
+      "claude",
+      "unlike",
+      "and",
+      "current",
+      "step",
+      "code",
+      "game",
+      "eat",
+      "open-source",
+      "model"
+    ],
+    "primary_category": "Educational",
+    "num_categories": 4,
+    "num_tags": 12
+  },
+  "impact": {
+    "affected_projects": [],
+    "actionable_insights": []
+  }
+}

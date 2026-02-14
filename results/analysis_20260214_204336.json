@@ -1,0 +1,78 @@
+{
+  "file_name": "instagram_DUmYulaEVof.mp4",
+  "timestamp": "2026-02-14T20:43:34.733369",
+  "config": {
+    "steps": {
+      "transcription": true,
+      "summary": true,
+      "research": true,
+      "categorization": true,
+      "impact": true
+    },
+    "llm_model": "ollama:llama2:13b",
+    "temperature": 0.7,
+    "file_name": "instagram_DUmYulaEVof.mp4",
+    "timestamp": "2026-02-14T20:43:34.728275"
+  },
+  "transcription": "[Transcription error: [WinError 2] The system cannot find the file specified]",
+  "summary": {
+    "summary": "[Transcription error: [WinError 2] The system cannot find the file specified].",
+    "key_takeaways": [
+      "[Transcription error: [WinError 2] The system cannot find the file specified]"
+    ],
+    "char_count": 77
+  },
+  "research": {
+    "findings": [
+      {
+        "title": "Transcription",
+        "snippet": "[Transcription error: [WinError 2] The system cannot find the file specified]",
+        "relevance": 0.8,
+        "source_type": "transcription_analysis",
+        "context": "mentioned in video"
+      },
+      {
+        "title": "The",
+        "snippet": "[Transcription error: [WinError 2] The system cannot find the file specified]",
+        "relevance": 0.8,
+        "source_type": "transcription_analysis",
+        "context": "mentioned in video"
+      },
+      {
+        "title": "Suggested Research Direction",
+        "snippet": "Consider performing web searches for the topics mentioned to find external resources and validation",
+        "relevance": 0.7,
+        "source_type": "research_recommendation",
+        "context": "automated suggestion"
+      }
+    ],
+    "search_terms_used": [
+      "Transcription",
+      "The"
+    ],
+    "topics_extracted": [
+      "Transcription",
+      "The"
+    ],
+    "num_findings": 3
+  },
+  "categorization": {
+    "categories": [
+      {
+        "name": "Educational",
+        "confidence": 100
+      }
+    ],
+    "tags": [
+      "transcription",
+      "the"
+    ],
+    "primary_category": "Educational",
+    "num_categories": 1,
+    "num_tags": 2
+  },
+  "impact": {
+    "affected_projects": [],
+    "actionable_insights": []
+  }
+}

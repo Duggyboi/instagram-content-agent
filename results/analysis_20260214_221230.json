@@ -1,0 +1,106 @@
+{
+  "file_name": "instagram_DT27XoikXge.mp4",
+  "timestamp": "2026-02-14T22:12:24.713881",
+  "config": {
+    "steps": {
+      "transcription": true,
+      "summary": true,
+      "research": true,
+      "categorization": true,
+      "impact": true
+    },
+    "llm_model": "ollama:llama2:13b",
+    "temperature": 0.7,
+    "file_name": "instagram_DT27XoikXge.mp4",
+    "timestamp": "2026-02-14T22:12:24.675969"
+  },
+  "transcription": "MCP has a huge problem. When you load up an LLM with MCP servers installed, the first thing it does is ask those MCP servers to list their tools. Each server then responds with a list of tools and their descriptions, which are injected directly into the context window of your large language model. Here's the problem. While modern large language models do have huge context windows, the more of that context you use, the worse the performance of the model actually gets. This is something people call context rod. Now, your best performing tokens, the earliest context is wasted on tool definitions of tools that you might never actually use. If you want to go deeper and learn MCP best practices, comment MCP and I'll send you a free resource.",
+  "summary": {
+    "summary": "Each server then responds with a list of tools and their descriptions, which are injected directly into the context window of your large language model. While modern large language models do have huge context windows, the more of that context you use, the worse the performance of the model actually gets. Now, your best performing tokens, the earliest context is wasted on tool definitions of tools that you might never actually use.",
+    "key_takeaways": [
+      "When you load up an LLM with MCP servers installed, the first thing it does is ask those MCP servers to list their tools",
+      "Each server then responds with a list of tools and their descriptions, which are injected directly into the context window of your large language model",
+      "While modern large language models do have huge context windows, the more of that context you use, the worse the performance of the model actually gets",
+      "This is something people call context rod",
+      "Now, your best performing tokens, the earliest context is wasted on tool definitions of tools that you might never actually use"
+    ],
+    "char_count": 745
+  },
+  "research": {
+    "findings": [
+      "Key insight on Large Language: Each server then responds with a list of tools and their descriptions, which are injected directly i...",
+      "Key insight on Context: Each server then responds with a list of tools and their descriptions, which are injected directly i...",
+      "Key insight on Tools: When you load up an LLM with MCP servers installed, the first thing it does is ask those MCP servers...",
+      "Topic 'Problem' is significant in the broader context of content analysis.",
+      "Key insight on Servers: When you load up an LLM with MCP servers installed, the first thing it does is ask those MCP servers...",
+      "Key insight on Their: When you load up an LLM with MCP servers installed, the first thing it does is ask those MCP servers..."
+    ],
+    "search_terms_used": [
+      "large language",
+      "context",
+      "tools",
+      "problem",
+      "servers"
+    ],
+    "topics_extracted": [
+      "large language",
+      "context",
+      "tools",
+      "problem",
+      "servers",
+      "their",
+      "When",
+      "Each"
+    ],
+    "research_areas": [
+      "Machine Learning"
+    ],
+    "num_findings": 6,
+    "num_topics": 8
+  },
+  "categorization": {
+    "categories": [
+      {
+        "name": "Educational",
+        "confidence": 100
+      },
+      {
+        "name": "Technology",
+        "confidence": 54
+      },
+      {
+        "name": "Science",
+        "confidence": 54
+      },
+      {
+        "name": "Music",
+        "confidence": 4
+      },
+      {
+        "name": "Entertainment",
+        "confidence": 2
+      }
+    ],
+    "tags": [
+      "when",
+      "each",
+      "here",
+      "while",
+      "this",
+      "now",
+      "learn",
+      "performance",
+      "perform",
+      "large-language",
+      "context",
+      "tools"
+    ],
+    "primary_category": "Educational",
+    "num_categories": 5,
+    "num_tags": 12
+  },
+  "impact": {
+    "affected_projects": [],
+    "actionable_insights": []
+  }
+}
