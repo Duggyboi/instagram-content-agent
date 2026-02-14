@@ -2,13 +2,13 @@
 Analysis package for video processing and insights extraction.
 """
 
-from .pipeline import (
-    AnalysisPipeline,
+from .pipeline import AnalysisPipeline
+from .agents import (
     TranscriptionAgent,
     SummaryAgent,
     ResearchAgent,
     CategorizationAgent,
-    ImpactAgent
+    MatchingAgent
 )
 
 __all__ = [
@@ -17,5 +17,5 @@ __all__ = [
     "SummaryAgent",
     "ResearchAgent",
     "CategorizationAgent",
-    "ImpactAgent"
+    "MatchingAgent"
 ]

@@ -72,6 +72,9 @@ st.markdown("""
         .result-card.impact {
             border-left-color: #8c564b;
         }
+        .result-card.validation {
+            border-left-color: #17a2b8;
+        }
     </style>
 """, unsafe_allow_html=True)
 
@@ -223,6 +226,7 @@ if selected == "Upload & Analyze":
         enable_summary = st.checkbox("📋 Summary", value=True)
         enable_research = st.checkbox("🔍 Research", value=True)
         enable_categorization = st.checkbox("🏷️ Categorization", value=True)
+        enable_proofreading = st.checkbox("✅ Quality Validation (Ollama)", value=False, help="Requires Ollama running - disabled by default")
         enable_impact = st.checkbox("💡 Project Impact", value=True)
         
         st.divider()
@@ -253,61 +257,84 @@ if selected == "Upload & Analyze":
             if st.button("🚀 Run Analysis", key="analyze_button", use_container_width=True):
                 st.session_state.analysis_in_progress = True
                 
-                with st.spinner("Starting analysis pipeline..."):
-                    # Create analysis configuration
-                    analysis_config = {
-                        "steps": {
-                            "transcription": enable_transcription,
-                            "summary": enable_summary,
-                            "research": enable_research,
-                            "categorization": enable_categorization,
-                            "impact": enable_impact
-                        },
-                        "llm_model": llm_model,
-                        "temperature": temperature,
-                        "file_name": st.session_state.uploaded_file['name'] if isinstance(st.session_state.uploaded_file, dict) else st.session_state.uploaded_file.name,
-                        "timestamp": datetime.now().isoformat()
-                    }
+                # Create progress placeholder
+                progress_bar = st.progress(0)
+                status_text = st.empty()
+                
+                # Create analysis configuration
+                analysis_config = {
+                    "steps": {
+                        "transcription": enable_transcription,
+                        "summary": enable_summary,
+                        "research": enable_research,
+                        "categorization": enable_categorization,
+                        "proofreading": enable_proofreading,
+                        "impact": enable_impact
+                    },
+                    "llm_model": llm_model,
+                    "temperature": temperature,
+                    "ollama_host": "http://localhost:11434",
+                    "ollama_model": "mistral",
+                    "file_name": st.session_state.uploaded_file['name'] if isinstance(st.session_state.uploaded_file, dict) else st.session_state.uploaded_file.name,
+                    "timestamp": datetime.now().isoformat()
+                }
+                
+                try:
+                    # Import analysis module
+                    from src.analysis.pipeline import AnalysisPipeline
                     
-                    try:
-                        # Import analysis module
-                        from src.analysis.pipeline import AnalysisPipeline
+                    # Determine file path
+                    if isinstance(st.session_state.uploaded_file, dict) and st.session_state.uploaded_file.get('is_downloaded'):
+                        # Downloaded video - use existing path
+                        file_path = st.session_state.uploaded_file['path']
+                    else:
+                        # Uploaded file - save temporarily
+                        temp_dir = Path("temp_uploads")
+                        temp_dir.mkdir(exist_ok=True)
+                        file_path = temp_dir / st.session_state.uploaded_file.name
                         
-                        # Determine file path
-                        if isinstance(st.session_state.uploaded_file, dict) and st.session_state.uploaded_file.get('is_downloaded'):
-                            # Downloaded video - use existing path
-                            file_path = st.session_state.uploaded_file['path']
-                        else:
-                            # Uploaded file - save temporarily
-                            temp_dir = Path("temp_uploads")
-                            temp_dir.mkdir(exist_ok=True)
-                            file_path = temp_dir / st.session_state.uploaded_file.name
-                            
-                            with open(file_path, "wb") as f:
-                                f.write(st.session_state.uploaded_file.getbuffer())
-                        
-                        # Run pipeline
-                        pipeline = AnalysisPipeline(config=analysis_config)
-                        results = pipeline.run(str(file_path))
-                        
-                        st.session_state.analysis_results = results
-                        st.session_state.analysis_in_progress = False
-                        
-                        st.success("✅ Analysis complete!")
-                        st.balloons()
-                        
-                    except ImportError:
-                        # Fallback: Create mock results for demonstration
-                        st.warning("⚠️ Running in demo mode (pipeline not yet implemented)")
-                        file_name = st.session_state.uploaded_file['name'] if isinstance(st.session_state.uploaded_file, dict) else st.session_state.uploaded_file.name
-                        st.session_state.analysis_results = create_demo_results(
-                            file_name,
-                            analysis_config
-                        )
-                        st.session_state.analysis_in_progress = False
-                    except Exception as e:
-                        st.error(f"❌ Analysis failed: {str(e)}")
-                        st.session_state.analysis_in_progress = False
+                        with open(file_path, "wb") as f:
+                            f.write(st.session_state.uploaded_file.getbuffer())
+                    
+                    # Update progress
+                    status_text.info("📝 Transcribing audio...")
+                    progress_bar.progress(20)
+                    
+                    # Run pipeline
+                    pipeline = AnalysisPipeline(config=analysis_config)
+                    results = pipeline.run(str(file_path))
+                    
+                    st.session_state.analysis_results = results
+                    st.session_state.analysis_in_progress = False
+                    
+                    # Final progress
+                    status_text.empty()
+                    progress_bar.progress(100)
+                    st.markdown('<div style="background:#D4EDDA; padding:12px; border-radius:8px; border-left:4px solid #28A745;"><b>✅ Analysis Complete!</b> Results are ready below.</div>', unsafe_allow_html=True)
+                    
+                    import time
+                    time.sleep(1)
+                    progress_bar.empty()
+                    
+                except ImportError:
+                    # Fallback: Create mock results for demonstration
+                    status_text.empty()
+                    progress_bar.progress(100)
+                    st.markdown('<div style="background:#FFF3CD; padding:12px; border-radius:8px; border-left:4px solid #FFC107;"><b>⚠️ Demo Mode</b> Running with sample analysis.</div>', unsafe_allow_html=True)
+                    file_name = st.session_state.uploaded_file['name'] if isinstance(st.session_state.uploaded_file, dict) else st.session_state.uploaded_file.name
+                    st.session_state.analysis_results = create_demo_results(
+                        file_name,
+                        analysis_config
+                    )
+                    st.session_state.analysis_in_progress = False
+                    import time
+                    time.sleep(1)
+                    progress_bar.empty()
+                except Exception as e:
+                    status_text.empty()
+                    progress_bar.empty()
+                    st.markdown(f'<div style="background:#F8D7DA; padding:12px; border-radius:8px; border-left:4px solid #DC3545;"><b>❌ Analysis Failed</b><br/>{str(e)}</div>', unsafe_allow_html=True)
+                    st.session_state.analysis_in_progress = False
         
         with col_clear:
             if st.button("🗑️ Clear", key="clear_button", use_container_width=True):
@@ -337,38 +364,87 @@ if selected == "Upload & Analyze":
         if "summary" in results and results["summary"]:
             with st.expander("📋 Summary", expanded=True):
                 st.markdown('<div class="result-card summary">', unsafe_allow_html=True)
-                st.markdown(results["summary"])
+                
+                # Extract summary text and key takeaways
+                summary_data = results["summary"]
+                summary_text = summary_data.get("summary", "") if isinstance(summary_data, dict) else summary_data
+                key_takeaways = summary_data.get("key_takeaways", []) if isinstance(summary_data, dict) else []
+                
+                # Display main summary
+                if summary_text:
+                    st.markdown("### 📄 Summary")
+                    st.markdown(f"> {summary_text}")
+                
+                # Display key takeaways
+                if key_takeaways:
+                    st.markdown("### 🎯 Key Takeaways")
+                    for idx, takeaway in enumerate(key_takeaways, 1):
+                        st.markdown(f"{idx}. {takeaway}")
+                
                 st.markdown('</div>', unsafe_allow_html=True)
         
         if "research" in results and results["research"]:
             with st.expander("🔍 Research Findings", expanded=True):
                 st.markdown('<div class="result-card research">', unsafe_allow_html=True)
-                for finding in results["research"].get("findings", []):
-                    st.markdown(f"- {finding}")
                 
-                if results["research"].get("links"):
-                    st.markdown("**Useful Links:**")
-                    for link in results["research"]["links"]:
+                research_data = results["research"]
+                
+                # Display extracted topics
+                topics = research_data.get("topics_extracted", [])
+                if topics:
+                    st.markdown("### 🏷️ Topics Identified")
+                    topic_badges = " • ".join([f"`{topic}`" for topic in topics])
+                    st.markdown(topic_badges)
+                
+                # Display findings
+                findings = research_data.get("findings", [])
+                if findings:
+                    st.markdown("### 📌 Key Findings")
+                    for idx, finding in enumerate(findings, 1):
+                        st.markdown(f"**{idx}.** {finding}")
+                
+                # Display search terms used
+                search_terms = research_data.get("search_terms_used", [])
+                if search_terms:
+                    st.markdown("### 🔎 Search Terms Used")
+                    terms_str = ", ".join([f"`{term}`" for term in search_terms])
+                    st.markdown(terms_str)
+                
+                if research_data.get("links"):
+                    st.markdown("### 🔗 Useful Links")
+                    for link in research_data["links"]:
                         st.markdown(f"- [{link['title']}]({link['url']})")
+                
                 st.markdown('</div>', unsafe_allow_html=True)
         
         if "categorization" in results and results["categorization"]:
             with st.expander("🏷️ Categorization", expanded=True):
                 st.markdown('<div class="result-card categorization">', unsafe_allow_html=True)
+                
                 cat = results["categorization"]
                 
-                col1, col2, col3 = st.columns(3)
-                with col1:
-                    st.metric("Primary Category", cat.get("primary", "Unknown"))
-                with col2:
-                    st.metric("Confidence", f"{cat.get('confidence', 0)}%")
-                with col3:
-                    st.metric("Relevance Score", f"{cat.get('relevance_score', 0)}/10")
+                # Display primary category prominently
+                primary = cat.get("primary_category")
+                categories = cat.get("categories", [])
                 
-                if cat.get("tags"):
-                    st.markdown("**Tags:**")
-                    tags = cat.get("tags", [])
-                    st.write(" ".join([f"🏷️ `{tag}`" for tag in tags]))
+                if primary:
+                    st.markdown(f"## 🎯 Primary Category: **{primary}**")
+                
+                # Display category confidence bars
+                if categories:
+                    st.markdown("### 📊 Category Confidence Scores")
+                    for item in categories[:5]:  # Top 5
+                        cat_name = item.get("name", "Unknown")
+                        confidence = item.get("confidence", 0)
+                        st.metric(cat_name, f"{confidence}%")
+                
+                # Display tags
+                tags = cat.get("tags", [])
+                if tags:
+                    st.markdown("### 🏷️ Tags")
+                    tag_chips = " ".join([f"<span style='display:inline-block; background:#E8F4F8; padding:6px 12px; border-radius:20px; margin:2px; font-size:0.9em;'>{tag}</span>" for tag in tags])
+                    st.markdown(f"<div style='margin-top:10px;'>{tag_chips}</div>", unsafe_allow_html=True)
+                
                 st.markdown('</div>', unsafe_allow_html=True)
         
         if "impact" in results and results["impact"]:
@@ -387,6 +463,70 @@ if selected == "Upload & Analyze":
                     st.markdown("**Actionable Insights:**")
                     for idx, insight in enumerate(impact["actionable_insights"][:5], 1):
                         st.markdown(f"{idx}. {insight}")
+                st.markdown('</div>', unsafe_allow_html=True)
+        
+        # Display validation metadata if available
+        if "validation_metadata" in results and results["validation_metadata"]:
+            with st.expander("✅ Quality Validation", expanded=False):
+                st.markdown('<div class="result-card">', unsafe_allow_html=True)
+                validation = results["validation_metadata"]
+                
+                if validation.get("validated"):
+                    st.success("✅ Results validated by Ollama proofreader")
+                    
+                    # Display validation timestamp
+                    if validation.get("validation_timestamp"):
+                        st.caption(f"Validated: {validation['validation_timestamp']}")
+                    
+                    # Display validation results by section
+                    validation_results = validation.get("validation_results", {})
+                    
+                    if validation_results.get("transcription"):
+                        trans_val = validation_results["transcription"]
+                        col1, col2 = st.columns(2)
+                        with col1:
+                            st.metric("Transcription Quality", f"{trans_val.get('quality_score', 0)}%")
+                        with col2:
+                            st.metric("Word Count", trans_val.get('word_count', 0))
+                        if trans_val.get("issues"):
+                            with st.expander("Issues found"):
+                                for issue in trans_val["issues"]:
+                                    st.write(f"• {issue}")
+                        if trans_val.get("ollama_assessment"):
+                            st.info(f"**AI Assessment:** {trans_val['ollama_assessment']}")
+                    
+                    if validation_results.get("summary"):
+                        summary_val = validation_results["summary"]
+                        col1, col2 = st.columns(2)
+                        with col1:
+                            st.metric("Summary Quality", f"{summary_val.get('quality_score', 0)}%")
+                        with col2:
+                            st.metric("Key Takeaways", summary_val.get('takeaway_count', 0))
+                        if summary_val.get("ollama_assessment"):
+                            st.info(f"**AI Assessment:** {summary_val['ollama_assessment']}")
+                    
+                    if validation_results.get("research"):
+                        research_val = validation_results["research"]
+                        col1, col2 = st.columns(2)
+                        with col1:
+                            st.metric("Research Quality", f"{research_val.get('quality_score', 0)}%")
+                        with col2:
+                            st.metric("Findings", research_val.get('findings_count', 0))
+                        if research_val.get("ollama_assessment"):
+                            st.info(f"**AI Assessment:** {research_val['ollama_assessment']}")
+                    
+                    if validation_results.get("categorization"):
+                        cat_val = validation_results["categorization"]
+                        col1, col2 = st.columns(2)
+                        with col1:
+                            st.metric("Category Quality", f"{cat_val.get('quality_score', 0)}%")
+                        with col2:
+                            st.metric("Categories Found", cat_val.get('category_count', 0))
+                        if cat_val.get("ollama_assessment"):
+                            st.info(f"**AI Assessment:** {cat_val['ollama_assessment']}")
+                else:
+                    st.warning(f"⚠️ Validation unavailable: {validation.get('reason', validation.get('error', 'Unknown reason'))}")
+                
                 st.markdown('</div>', unsafe_allow_html=True)
         
         # Export options
